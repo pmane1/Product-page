@@ -1,0 +1,44 @@
+@use 'global' as *;
+
+.hero{
+    background: url('../images/bg-header-desktop.png') center top/cover;
+    padding-top: 120px;
+
+    @include media-md{
+        background: url('../images/bg-header-mobile.png') center/cover;
+        padding-top: 130px;
+    }
+
+    img{
+        margin-bottom: 70px;
+    }
+
+    br{
+        @include media-lg{
+            display: none;
+        }
+    }
+    
+    p{
+        margin-bottom: 50px;
+        line-height: 1.6;
+    }
+    
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include media-sm {
+            flex-direction: column;
+        }
+
+    button:first-child{
+        margin-right: 16px;
+
+        @include media-sm{
+            margin-bottom: 20px;
+        }
+    }
+    }
+}

@@ -54,4 +54,38 @@ h1 {
   }
 }
 
+button {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 30px;
+  padding: 16px 40px;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+@media screen and (max-width: 420px) {
+  button {
+    width: 100%;
+  }
+}
+button.green {
+  background: #26baa4;
+  border-bottom: 3px solid #26baa4;
+  left: 7px;
+}
+button.green:hover {
+  background: #29c7af;
+  box-shadow: 0px 4px 14px rgba(38, 186, 164, 0.5);
+}
+button.blue {
+  background: #6173ff;
+  border-bottom: 3px solid #6173ff;
+}
+button.blue:hover {
+  background: #7081ff;
+  box-shadow: 0px 4px 14px rgba(97, 115, 255, 0.5);
+}
+
 /*# sourceMappingURL=global.css.map */
