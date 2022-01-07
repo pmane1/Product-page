@@ -45,14 +45,17 @@ body{
 // all style
 .wrapper{
     padding: 0 32px 157px;
+    
+    @include media-lg{
+        padding-bottom: 142px;
+    }
+}
+
+.centered{
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-
-    @include media-lg{
-        padding-bottom: 0 0 142px;
-    }
 }
 .content{
         max-width: 700px;
@@ -66,13 +69,38 @@ h1, h2, h3{
 }
 
 h1{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: 25px;
     line-height: 1.2;
 
     @include media-lg{
         font-size: 2.5rem;
     }
+}
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+
+    @include media-lg{
+        font-size: 2.125rem;
+    }
+}
+
+// p
+p{
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+p .large{
+    font-size: 1.125rem;
+}
+p .medium{
+    font-size: 1rem;
+}
+p .small{
+    font-size: 0.875rem;
 }
 
 // buttons

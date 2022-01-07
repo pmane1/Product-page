@@ -22,15 +22,18 @@ body {
 
 .wrapper {
   padding: 0 32px 157px;
+}
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    padding-bottom: 142px;
+  }
+}
+
+.centered {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
-}
-@media screen and (min-width: 1000px) {
-  .wrapper {
-    padding-bottom: 0 0 142px;
-  }
 }
 
 .content {
@@ -44,7 +47,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 25px;
   line-height: 1.2;
 }
@@ -52,6 +55,34 @@ h1 {
   h1 {
     font-size: 2.5rem;
   }
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+@media screen and (min-width: 1000px) {
+  h2 {
+    font-size: 2.125rem;
+  }
+}
+
+p {
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+p .large {
+  font-size: 1.125rem;
+}
+
+p .medium {
+  font-size: 1rem;
+}
+
+p .small {
+  font-size: 0.875rem;
 }
 
 button {
