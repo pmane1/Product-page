@@ -1,6 +1,7 @@
 $font_primary: 'Bai Jamjuree', sans-serif;
 $font-main-dark: #4c5054;
 $font-main-light: #96a2a8;
+$lightGray: #f5f6f8;
 $green: hsl(171, 66%, 44%);
 $blue: hsl(233, 100%, 69%);
 
@@ -10,7 +11,7 @@ $blue: hsl(233, 100%, 69%);
     }
 }
 @mixin media-md {
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 743px){
         @content;
     }
 }
