@@ -90,7 +90,26 @@ p .small {
   max-width: 350px;
 }
 
-button {
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 460px) {
+  .btn {
+    flex-direction: column;
+  }
+}
+.btn button:first-child {
+  margin-right: 16px;
+}
+@media screen and (max-width: 460px) {
+  .btn button:first-child {
+    margin-bottom: 20px;
+  }
+}
+.btn button {
   position: relative;
   color: #fff;
   text-decoration: none;
@@ -101,25 +120,25 @@ button {
   cursor: pointer;
   transition: 0.15s ease-in-out;
 }
-@media screen and (max-width: 420px) {
-  button {
+@media screen and (max-width: 460px) {
+  .btn button {
     width: 100%;
   }
 }
-button.green {
+.btn button.green {
   background: #26baa4;
   border-bottom: 3px solid #26baa4;
   left: 7px;
 }
-button.green:hover {
+.btn button.green:hover {
   background: #29c7af;
   box-shadow: 0px 4px 14px rgba(38, 186, 164, 0.5);
 }
-button.blue {
+.btn button.blue {
   background: #6173ff;
   border-bottom: 3px solid #6173ff;
 }
-button.blue:hover {
+.btn button.blue:hover {
   background: #7081ff;
   box-shadow: 0px 4px 14px rgba(97, 115, 255, 0.5);
 }
@@ -146,7 +165,7 @@ button.blue:hover {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   .hero .btn {
     flex-direction: column;
   }
@@ -154,7 +173,7 @@ button.blue:hover {
 .hero .btn button:first-child {
   margin-right: 16px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   .hero .btn button:first-child {
     margin-bottom: 20px;
   }
@@ -222,6 +241,28 @@ button.blue:hover {
 @media screen and (min-width: 1000px) {
   .supercharge .columns .column img {
     padding-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .logos .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.logos .columns .logo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logos .columns .logo:not(:last-child) {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1000px) {
+  .logos .columns .logo:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
