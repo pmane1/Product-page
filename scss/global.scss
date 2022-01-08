@@ -36,6 +36,8 @@ body{
     font-size: 1rem;
     line-height: 1.3rem;
     color: $font-main-light;
+    background: url('../images/bg-header-desktop.png') center top/contain;
+    background-repeat: no-repeat;
     
     @include media-lg{
         font-size: 1.15rem;
@@ -45,6 +47,8 @@ body{
 // all style
 .wrapper{
     padding: 0 32px 157px;
+    max-width: 1110px;
+    margin: auto;
     
     @include media-lg{
         padding-bottom: 142px;
@@ -101,6 +105,7 @@ p .medium{
 }
 p .small{
     font-size: 0.875rem;
+    max-width: 350px;
 }
 
 // buttons

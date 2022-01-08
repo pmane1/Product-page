@@ -1,7 +1,6 @@
 @use 'global' as *;
 
 .hero{
-    background: url('../images/bg-header-desktop.png') center top/cover;
     padding-top: 120px;
 
     @include media-md{

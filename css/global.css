@@ -13,6 +13,8 @@ body {
   font-size: 1rem;
   line-height: 1.3rem;
   color: #96a2a8;
+  background: url("../images/bg-header-desktop.png") center top/contain;
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 1000px) {
   body {
@@ -22,6 +24,8 @@ body {
 
 .wrapper {
   padding: 0 32px 157px;
+  max-width: 1110px;
+  margin: auto;
 }
 @media screen and (min-width: 1000px) {
   .wrapper {
@@ -83,6 +87,7 @@ p .medium {
 
 p .small {
   font-size: 0.875rem;
+  max-width: 350px;
 }
 
 button {
